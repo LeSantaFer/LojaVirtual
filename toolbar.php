@@ -36,20 +36,30 @@
         <div class="mdc-toolbar__row">
             <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
                 <?php
-                    if (isset($canBack) && $canBack) {
-                        echo("
-                            <span class='catalog-back'>
-                                <a href='' class='mdc-toolbar__icon mdc-toolbar__icon--menu' onclick='goBack()'>
-                                    <i class='material-icons'>arrow_back</i>
-                                </a>
-                            </span>
-                        ");
+                    if (isset($canBack)) {
+                        if ($canBack) {
+                            echo("
+                                <span class='catalog-back'>
+                                    <a href='' class='mdc-toolbar__icon mdc-toolbar__icon--menu' onclick='goBack()'>
+                                        <i class='material-icons'>arrow_back</i>
+                                    </a>
+                                </span>
+                            ");
+                        }
+
+                    } else {
+
+                        echo("Variable canBack must have been initialized!");
                     }
 
                     if (isset($title)) {
                         echo("
                             <span class='mdc-toolbar__title'>$title</span>
                         ");
+
+                    } else {
+
+                        echo("Variable title must have been initialized!");
                     }
                 ?>
             </section>
