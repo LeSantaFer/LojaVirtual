@@ -20,8 +20,14 @@
             }
 
             .mdc-toolbar {
-                background-color: #009688;
-                padding: 10%;
+                background-color: #212121;
+                color: white;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            .catalog-back i {
+                color: white;
             }
         </style>
     </head>
@@ -33,7 +39,9 @@
                     if (isset($canBack) && $canBack) {
                         echo("
                             <span class='catalog-back'>
-                                <a onclick='goBack()'><i class='material-icons'>arrow_back</i></a>
+                                <a href='' class='mdc-toolbar__icon mdc-toolbar__icon--menu' onclick='goBack()'>
+                                    <i class='material-icons'>arrow_back</i>
+                                </a>
                             </span>
                         ");
                     }
