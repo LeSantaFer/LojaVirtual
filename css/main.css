@@ -1,3 +1,14 @@
 body {
     background-color: rgba(0, 0, 0, 0.05);
+    padding-top: 56px;
+}
+
+.mdc-card {
+    background-color: white;
+    margin: 22px 10%;
+    padding: 22px;
+}
+
+.mdc-card .mdc-card__supporting-text {
+    padding: 0;
 }
