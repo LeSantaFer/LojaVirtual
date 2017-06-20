@@ -22,13 +22,18 @@
             .mdc-toolbar {
                 background-color: #212121;
                 color: white;
-                padding-left: 10%;
+                padding-left: 20%;
                 padding-right: 10%;
             }
 
             .catalog-back i {
                 color: white;
             }
+
+            <?php
+                if (isset($style))
+                    echo ($style)
+            ?>
         </style>
     </head>
 
@@ -66,7 +71,9 @@
         </div>
     </header>
 
-    <script src="node_modules/@material/toolbar/dist/mdc.toolbar.js">
+    <script src="node_modules/@material/toolbar/dist/mdc.toolbar.js"></script>
+
+    <script>
         var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
         toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
     </script>

@@ -18,10 +18,12 @@
                 if (sizeof($items == sizeof($paths))) {
                     for ($i = 0; $i < sizeof($items); $i++) {
                         echo("
-                            <a href='" . $paths[$i] . "' class='mdc-list-item' id='item$i' data-mdc-auto-init='MDCRipple'>"
+                            <a href='" . $paths[$i] . "' class='mdc-list-item' id='item$gblI' data-mdc-auto-init='MDCRipple'>"
                                 . $items[$i] .
                             "</a>
                         ");
+
+                        $gblI++;
                     }
 
                 } else {
@@ -33,10 +35,14 @@
 
                 foreach ($items as $i => $item) {
                     echo("
-                        <a class='mdc-list-item' id='item$i' data-mdc-auto-init='MDCRipple'>$item</a>
+                        <a class='mdc-list-item' id='item$gblI' data-mdc-auto-init='MDCRipple'>$item</a>
                     ");
+
+                    $gblI++;
                 }
             }
+
+            $gblI -= sizeof($items);
 
             echo("
                 <script src='node_modules/@material/ripple/dist/mdc.ripple.js'></script>
@@ -44,7 +50,8 @@
             ");
 
             for ($i = 0; $i < sizeof($items); $i++) {
-                echo("mdc.ripple.MDCRipple.attachTo(document.querySelector('#item$i'));");
+                echo("mdc.ripple.MDCRipple.attachTo(document.querySelector('#item$gblI'));");
+                $gblI++;
             }
 
             echo("</script>");
