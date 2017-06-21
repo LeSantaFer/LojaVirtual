@@ -17,9 +17,6 @@
         <link href="node_modules/@material/drawer/dist/mdc.drawer.css"
               type="text/css" rel="stylesheet" media="screen, projection"/>
 
-        <link href="node_modules/@material/typography/dist/mdc.typography.css"
-              type="text/css" rel="stylesheet" media="screen, projection"/>
-
         <link href="css/main.css" type="text/css" rel="stylesheet" media="screen, projection"/>
     </head>
 
@@ -48,20 +45,12 @@
         <div class="content">
             <div class="mdc-card">
                 <section class="mdc-card__supporting-text">
-                    <div class="pagina">
-                        <?php include("admin_menu.php") ?>
-                    </div>
-
-                    <div class="subpagina">
-                        <?php
+                    <?php
                         if (!isset($_REQUEST["sp"]))
-                            include("admin_main.php");
+                            include("admin_paginicial.php");
                         else
-                            include("admin_" . $_REQUEST["sp"] . ".php");
-                        ?>
-                    </div>
-
-                    <div class="limpar"></div>
+                            include("admin_" . $_REQUEST['sp'] . ".php")
+                    ?>
                 </section>
             </div>
         </div>
