@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.03);
     margin: 0;
 }
 
@@ -13,7 +13,6 @@ body {
     background-color: white;
     width: 18%;
     height: 100%;
-    margin: 0;
     position: fixed;
 }
 

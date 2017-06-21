@@ -38,9 +38,17 @@
 
         <div class="menu">
             <section class="mdc-card__supporting-text">
-                <div class="pagina">
-                    <?php include("admin_menu.php") ?>
-                </div>
+                <?php
+                    $style = "
+                        .mdc-list-item {
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            letter-spacing: 0.04em;
+                            line-height: 1.5rem;
+                        }
+                    ";
+                    include("admin_menu.php")
+                ?>
             </section>
         </div>
 
