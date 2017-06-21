@@ -19,6 +19,9 @@
         <link href="node_modules/@material/drawer/dist/mdc.drawer.css"
               type="text/css" rel="stylesheet" media="screen, projection"/>
 
+        <link href="node_modules/@material/typography/dist/mdc.typography.css"
+              type="text/css" rel="stylesheet" media="screen, projection"/>
+
         <link href="css/main.css" type="text/css" rel="stylesheet" media="screen, projection"/>
     </head>
 

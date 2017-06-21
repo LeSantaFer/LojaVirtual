@@ -5,4 +5,4 @@
  * Time: 21:36
  */
 
-$connection = mysqli_connect("localhost", "root", "root", "virtualstore");
+$con = mysqli_connect("localhost", "root", "root", "virtualstore");

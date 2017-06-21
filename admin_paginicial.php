@@ -8,16 +8,19 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>Página inicial</title>
 
         <link href="/css/main.css" type="text/css" rel="stylesheet" media="screen, projection"/>
-
-        <link href="node_modules/@material/typography/dist/mdc.typography.css"
-              type="text/css" rel="stylesheet" media="screen, projection"/>
     </head>
 
-    <body>
-        <h1 class="mdc-typography--title" style="text-align: center">
-            Seja bem-vindo ao painel administrativo</h1>
+    <body style="text-align: center">
+        <div style="height: 32vh"></div>
+
+        <h1 class="mdc-typography--title">
+            Seja bem-vindo ao painel administrativo
+        </h1>
+
+        Pronto, essa página só serve pra isso mesmo. Agora você já pode selecionar uma das opções do menu à sua esquerda.
+
+        <div style="height: 32vh"></div>
     </body>
 </html>
