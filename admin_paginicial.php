@@ -17,8 +17,7 @@
     </head>
 
     <body>
-        <center>
-            <h1 class="mdc-typography--title">Seja bem-vindo ao painel administrativo</h1>
-        </center>
+        <h1 class="mdc-typography--title" style="text-align: center">
+            Seja bem-vindo ao painel administrativo</h1>
     </body>
 </html>

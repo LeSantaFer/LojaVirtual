@@ -7,6 +7,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <?php include("conexao.php") ?>
+
     <head>
         <meta charset="UTF-8"/>
         <title>Início</title>
